@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>A simple form</title>
+        <style type="text/css">
+            table {
+                width: 75%;
+            }
+            .text-input tr td input{
+                width: 100%;
+                margin: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form action="lab-2-Ex1.php" method="POST">
+            <table class="text-input">
+                <tr>
+                    <td style="width: 15%;">Name </td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td><input type="text" name="class"></td>
+                </tr>
+                <tr>
+                    <td>University</td>
+                    <td><input type="text" name="university"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="width: 15%;">Sex</td>
+                    <td>
+                        <input type="radio" name="sex" value="Male"> Male
+                        <input type="radio" name="sex" value="Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 15%;">Hobby</td>
+                    <td>
+                        <input type="checkbox" name="hobby[]" value="music"> music <br>
+                        <input type="checkbox" name="hobby[]" value="sport"> sport
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Click to submit">
+            <input type="reset" value="Erase and restart">
+        </form>
+    </body>
+</html>
